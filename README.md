@@ -24,7 +24,7 @@ El objetivo principal del proyecto fue practicar el uso de hooks avanzados en Re
 1. Clona el repositorio:  
 
 ```bash
-git clone https://github.com/tu-usuario/calorie-tracker.git 
+git clone https://github.com/Yuly-katherine/calorie-tracker
 ```
 
 2. Instala las dependencias: 
