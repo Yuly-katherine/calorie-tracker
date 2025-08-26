@@ -7,7 +7,7 @@ Este proyecto es una aplicación web que permite al usuario llevar un registro d
 
 De esta manera, el usuario puede visualizar de forma sencilla el balance calórico diario.  
 
-El objetivo principal del proyecto fue practicar el uso de hooks avanzados en React, especialmente `useMemo` y `useReducer`.  
+El objetivo principal del proyecto fue practicar el uso de hooks avanzados en React, especialmente `useMemo` , `useEffect` y `useReducer`.  
 
 ---
 
