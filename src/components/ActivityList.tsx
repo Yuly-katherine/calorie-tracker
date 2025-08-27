@@ -31,7 +31,7 @@ export default function ActivityList({ activities , dispatch}: ActivityListProps
                 {getCategoryName(+activity.category)}</p> 
             <p className="text-2xl font-bold pt-5">{activity.name}</p>
             <p className="font-black text-4xl text-lime-500">
-            {activity.calories}{' '} <span>Calorias</span>
+            {activity.calories} <span>Calorias</span>
             </p>
             </div>
             <div className=" flex gap-5 items-center">

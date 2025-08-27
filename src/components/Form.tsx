@@ -30,9 +30,11 @@ export default function Form({dispatch, state}: FormProps) {
     }, [state.activeId])
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement> |  React.ChangeEvent<HTMLSelectElement>) =>{
+        const isNumberField = ['category', 'calories'].includes(event.target.id)
+
     setActivity({
         ... activity,
-        [event.target.id] : event.target.value
+        [event.target.id] : isNumberField ? +event.target.value : event.target.value
     })
     }
 
@@ -76,14 +78,14 @@ export default function Form({dispatch, state}: FormProps) {
             type="text" 
             id="name" 
             className="border border-slate-300 rounded-lg p-2" 
-            placeholder="Ej. Comida, Jugo de Naranja, Ensalda, Ejercicio, Pesas, Bicicleta" 
+            placeholder="Ej. Comida, Jugo de Naranja, Ensalada, Ejercicio, Pesas, Bicicleta" 
             value={activity.name} onChange={handleChange}/>
         </div>
 
         <div className="grid grid-cols-1 gap-3">
             <label htmlFor="calories" className="font-bold">Calorias:</label>
             <input type="number" id="calories" className="border border-slate-300 rounded-lg p-2" placeholder="Ej. 300, 500"
-            value={activity.calories} 
+            value={activity.calories === 0 ? '' : activity.calories}
             onChange={handleChange}/>
         </div>
 
